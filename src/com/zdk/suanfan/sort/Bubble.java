@@ -18,34 +18,20 @@ public class Bubble {
                    temp = arr[j];
                    arr[j] = arr[j+1];
                    arr[j+1] = temp;
-                   System.out.println(toStr(arr));
+                   System.out.println(Utils.toStr(arr));
 
                 }
 
 
              }
-             System.err.println("-------------------------"+toStr(arr));
+             System.err.println("-------------------------"+Utils.toStr(arr));
         }
 
 
 
     }
 
-   public String toStr (int arr[]) {
-        StringBuilder stringBuilder = new StringBuilder();
-        for (int i = 0 ; i < arr.length; i++) {
-            stringBuilder.append(arr[i]);
 
-            if (i  < arr.length -1) {
-                stringBuilder.append(",");
-
-            }
-
-        }
-
-        return  stringBuilder.toString();
-
-   }
     public static void main(String[] args) {
         int [] arr = {11,2,4,7,0,100,123,3,5};
         Bubble bubble = new Bubble();

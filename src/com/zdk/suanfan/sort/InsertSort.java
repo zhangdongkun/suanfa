@@ -11,9 +11,7 @@ public class InsertSort {
     public static void sort(int[] arr) {
         int len = arr.length;
         for (int i = 0; i < len; i++) {
-
             int index = 0;
-            int temp;
             int max = Integer.MIN_VALUE;
             for (int j = 0; j < len - i; j++) {
                 if (arr[j] > max) {

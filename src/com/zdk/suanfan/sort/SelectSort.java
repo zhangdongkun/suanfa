@@ -6,7 +6,7 @@ package com.zdk.suanfan.sort;
  * @date：2019/7/13 21:25
  * @description：
  */
-public class InsertSort {
+public class SelectSort {
 
     public static void sort(int[] arr) {
         int len = arr.length;

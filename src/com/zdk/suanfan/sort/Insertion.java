@@ -3,17 +3,16 @@ package com.zdk.suanfan.sort;
 public class Insertion {
 
     /***
-     * 插入排序
+     * 插入排序，从第2个元素开始遍历
+     * 前面已经排后了只需要比较最后一位就可以 continue
+     *
      * @param arr
      */
     public static void sort(int[] arr) {
         int len = arr.length;
         for (int i = 1; i < len; i++) {
-            for (int j = i; j >0 ; j--) {
-                if (arr[j] < arr[j-1]) {
+            for (int j = i; j >0 && arr[j] < arr[j-1] ; j--) {
                     Utils.swap(arr, j, j-1);
-                    continue;
-                }
 
             }
 
